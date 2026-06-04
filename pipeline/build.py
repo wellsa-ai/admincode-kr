@@ -6,7 +6,7 @@
 
 산출:
   kr/{시도}.md          — 시도별 시군구/읍면동 목록 (YAML frontmatter, git diff 로 개편 추적)
-  data/legal_dong.json  — {"dong_sido": {동이름: [시도약칭...]}, "meta": {...}} (소비자: obs-chatbot 등)
+  data/legal_dong.json  — {"dong_sido": {동이름: [시도약칭...]}, "meta": {...}} (주소 검증 등 서비스 소비용)
 
 갱신: 행정구역 개편(통폐합) 시만 변경 → 분기 1회 실행 권장.
 사용: python3 pipeline/build.py [--from-file 법정동코드.txt]

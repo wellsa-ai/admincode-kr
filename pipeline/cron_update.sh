@@ -22,6 +22,6 @@ else
     git push origin main >> "$LOG" 2>&1
     echo "pushed" >> "$LOG"
 
-    # 미니 보고 + obs-chatbot 동기화 알림
-    ~/bin/mini-ask -t "[admincode-kr] 법정동 데이터 변경 감지(행정구역 개편) → GitHub 푸시 완료. obs-chatbot legal_dong.json 동기화 필요: curl -sL https://raw.githubusercontent.com/wellsa-ai/admincode-kr/main/data/legal_dong.json -o backend/data/legal_dong.json 후 배포" >> /dev/null 2>&1 || true
+    # 변경 알림 (소비 서비스들은 data/legal_dong.json 재동기화 필요)
+    ~/bin/mini-ask -t "[admincode-kr] 법정동 데이터 변경 감지(행정구역 개편) → GitHub 푸시 완료. 소비 서비스들의 legal_dong.json 재동기화 필요" >> /dev/null 2>&1 || true
 fi
