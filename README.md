@@ -51,11 +51,11 @@ git diff                          # 개편 내역 확인
 - 소스: 행정안전부 행정표준코드관리시스템 [code.go.kr](https://www.code.go.kr) — 법정동코드 전체자료 (무료 공개)
 - 다운로드 방식: `POST /etc/codeFullDown.do` (`codeseId=법정동코드`) → ZIP(txt, euc-kr)
 
-## 소비자
+## 활용 예
 
-| 서비스 | 용도 |
-|---|---|
-| [obs-chatbot](https://github.com/wellsa-ai) 오이사 카카오 챗봇 | 견적 출발지/도착지 주소 실존 검증 (가짜 주소 접수 차단) |
+- 사용자 입력 주소의 실존 여부 검증 (가짜·오타 주소 차단)
+- 주소 자동완성·정규화의 기준 사전
+- 행정구역 개편 이력 분석 (Git history)
 
 ## 라이선스
 
